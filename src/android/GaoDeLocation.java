@@ -144,9 +144,11 @@ public class GaoDeLocation extends CordovaPlugin implements SingleLocaitonDelega
      * @param multitasking Flag indicating if multitasking is turned on for app
      */
     public void onPause(boolean multitasking) {
-        if (null != this.serialLocation.locationClient) {
-            this.serialLocation.locationClient.enableBackgroundLocation(2001, this.serialLocation.buildNotification());
-        }
+        
+        // no notification now.
+        // if (null != this.serialLocation.locationClient) {
+        //     this.serialLocation.locationClient.enableBackgroundLocation(2001, this.serialLocation.buildNotification());
+        // }
     }
 
     /**
