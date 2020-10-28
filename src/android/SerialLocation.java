@@ -233,7 +233,6 @@ public class SerialLocation implements SerialLocationInterface{
             builder = new Notification.Builder(mContext);
         }
         builder
-                .setSmallIcon(R.mipmap.ic_launcher)
                 .setContentTitle(getAppName(mContext))
                 .setContentText("正在后台运行")
                 .setWhen(System.currentTimeMillis());
